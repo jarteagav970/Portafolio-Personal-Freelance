@@ -1,0 +1,567 @@
+:root {
+    /*esto se utiliza para poner variables en css se pued eponer cualquier cosa como el tipo de fuente, tamaño de la fuente colores etc..*/
+    --color-principal: #2C3E50;
+    /* encabezado, el pie de página, los títulos principales y los textos importantes.*/
+    --color-secundario: #3498DB;
+    /*botones, enlaces, iconos y elementos que se van a destacar*/
+    --color-detalles: #E74C3C;
+    --color-info-clave: #F39C12;
+    --color-fondo: #ECF0F1;
+    --color-gris: #696969;
+    --color-blanco: #FFFFFF;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /*esto sirve para que midan los contenedores exactamente lo que le pones y esto va complementado con el bloqur de la parte de abajo*/
+    scroll-snap-type: y mandatory;
+}
+
+/* este bloque es para que lo que le agregues a tu contenedor extra ejemplo padding, boder no cambie se tamaño de los pixeles*/
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*Los font-size de html y body son pra tener un mejor manejo en las medidas con los rem ya que asi se daptan mejor a las pantallas*/
+body {
+    font-size: 16px;
+    font-family: "Roboto Condensed", sans-serif;
+    background-image: linear-gradient(to top, #D6D6D6 0%, var(--color-blanco) 100%);
+    /* esta linea sirve para poner un color de fondo a la pagina con degradado de abajo hacia arriba*/
+}
+
+
+
+.sombra {
+    box-shadow: 0px 5px 16px -3px rgba(0, 0, 0, 0.75);
+    /* este se utiliza para hacer un cuadro en elcontenedor con sombra*/
+    background-color: var(--color-blanco);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.sombra-sm {
+    box-shadow: 0px 5px 16px -3px rgba(0, 0, 0, 0.75);
+    /* este se utiliza para hacer un cuadro en elcontenedor con sombra*/
+    background-color: var(--color-principal);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.contenedor-sobremi {
+    margin-top: 3rem;
+}
+
+.parrafos-herramientas .sombra {
+    box-shadow: 0px 5px 16px -3px rgba(0, 0, 0, 0.75);
+    /* este se utiliza para hacer un cuadro en elcontenedor con sombra*/
+    background-color: var(--color-gris);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h1 span {
+    font-size: 2rem;
+}
+
+
+
+.encabezado {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 15rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    color: color-mix(in srgb, var(--color-info-clave) 30%, transparent);
+}
+
+.banner-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.banner-imagen img {
+    height: 40.1rem;
+    width: 70.2rem;
+    transform: translate(0, -5.5rem);
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .banner-imagen img {
+        height: 30.1rem;
+        width: 50.2rem;
+        transform: translate(0, -5.5rem);
+        margin-bottom: 0;
+
+        .encabezado {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 8rem;
+            margin-bottom: 0;
+            margin-top: 1rem;
+            color: color-mix(in srgb, var(--color-info-clave) 30%, transparent);
+        }
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .banner-imagen img {
+        height: 17rem;
+        width: 37rem;
+        transform: translate(0, -1.7rem);
+        margin-bottom: 0;
+    }
+
+    .encabezado {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 5rem;
+        margin-bottom: 0;
+        margin-top: 1rem;
+        color: color-mix(in srgb, var(--color-info-clave) 30%, transparent);
+    }
+
+    .banner h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5rem;
+    margin-top: 0;
+    color: color-mix(in srgb, var(--color-info-clave) 30%, transparent);
+    transform: translate(0, -3.5rem);
+    margin-bottom: 0;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+
+}
+
+
+.titulo-banner {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 8rem;
+    margin-top: 0;
+    color: color-mix(in srgb, var(--color-info-clave) 30%, transparent);
+    transform: translate(0, -8.5rem);
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.colorNav_backgraund {
+    background-color: var(--color-principal);
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.boton {
+    background-color: var(--color-principal);
+    color: var(--color-detalles);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+/* utilidades*/
+
+.w_100 {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .w_100 {
+        width: auto;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.alinear_derecha {
+    justify-content: flex-end;
+}
+
+.contenido_hero a:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+
+.nav_bar {
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media (min-width: 768px) {
+    .nav_bar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/*
+Para un media query para hacer la pagina responsive hay 
+unos tamaños estandar en pantalla como 480px es para un telefono
+768px es para una tablet, despues hay 2 opciones 1140px sirven para
+una laptop y un computadora de escritorio y hay otro de 1400px  que 
+es para lo mismo.
+*/
+
+.nav_bar a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: var(--color-detalles);
+    text-decoration: none;
+}
+
+.nav_bar a:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+
+.hero {
+    background-image: url(../image/hero.jpg);
+    /*esto es para poner una imagen de fondo*/
+    background-repeat: no-repeat;
+    /*esto es para que la imagen no se repita cuando cambia el tamaño de la pantalla*/
+    background-size: cover;
+    /*esto es para que se adapte la imagen al tamaño de la pantalla y no se vean separaciones*/
+    height: 45rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+
+.contenido_hero {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+
+    /*este bloque sirve para alinear contenido horizontal y en vertical*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido_hero h2,
+.contenido_hero p {
+    color: var(--color-blanco);
+}
+
+
+.ubicacion {
+    display: flex;
+    align-items: flex-end;
+}
+
+/*pagina sobre mi/ hero*/
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.banner img {
+    border-radius: 5rem;
+}
+
+.banner h3 {
+    text-transform: uppercase;
+}
+
+/* pagina sobre mi/ trayectoria*/
+
+
+.trayectoria-contenido {
+    text-align: center;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.contenedor-trayectoria {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*pagina sobre mi/ habilidades y herramientas*/
+
+.contenido-habilidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.contenido-herramientas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+
+.parrafos-herramientas:nth-child(4) {
+    grid-column: 2/2;
+    padding-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .contenido-herramientas {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        align-items: center;
+        text-align: center;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+    }
+
+    .parrafos-herramientas:nth-child(1) {
+        grid-column: 2/2;
+        padding-top: 2rem;
+    }
+
+
+    .parrafos-herramientas:nth-child(2) {
+        grid-row: 2/2;
+        grid-column: 2/2;
+        padding-top: 2rem;
+    }
+
+    .parrafos-herramientas:nth-child(3) {
+        grid-row: 3/3;
+        grid-column: 2/2;
+        padding-top: 2rem;
+    }
+
+    .parrafos-herramientas:nth-child(4) {
+        grid-row: 4/4;
+        padding-top: 2rem;
+    }
+
+
+}
+
+.parrafos-herramientas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    color: black;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.parrafos-herramientas h3 {
+    color: var(--color-info-clave);
+}
+
+.herramientas h2 {
+    color: var(--color-detalles);
+    font-size: 5rem;
+    font-style: italic;
+}
+
+.parrafos-herramientas .marco {
+    background-color: var(--color-principal);
+    padding: 3rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+/*pagina sobre mi/ filosofia*/
+
+.filosofia {
+    text-align: center;
+    margin-top: 5rem;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.contenedor-filosofia {
+    margin-bottom: 2rem;
+}
+
+
+/*Servicios*/
+
+.servicios,
+.nav_bar,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+@media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        /*El grid sirve para dividir en varias partes el contenedor se puede acomodar en ambas direcciones horizontal y vertical*/
+        grid-template-columns: repeat(3, 1fr);
+        /* esto sirve para dibidir en 3 columnas el contenedor y que hagarren una fraccion cada columna en este caso del 100% del ancho se divide en 3 fracciones (1fr es una fraccion)*/
+        column-gap: 2rem;
+        /*esto sirve para darles una separaciona las columnas como si fuera un padding o margin esto es para grid*/
+    }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3 {
+    color: var(--color-info-clave);
+    font-weight: normal;
+}
+
+.servicio p {
+    line-height: 2;
+    /* esto es para dar interlineado a los parrafos*/
+    text-align: center;
+}
+
+.servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--color-principal);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Contacto*/
+
+.formulario {
+    background-color: var(--color-gris);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--color-info-clave);
+}
+
+@media (min-width: 768px) {
+
+    .contenedor_campos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        grid-template-rows: auto auto 20rem;
+
+    }
+
+}
+
+.campo:nth-child(3),
+/* esto sirve por si hay varias etiquetas con la misma clase para elejir una en especifico*/
+.campo:nth-child(4) {
+    grid-column: 1 / 3;
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: var(--color-blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input_text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.enviar .boton {
+    width: 100%;
+}
+
+.campo textarea {
+
+    height: 20rem;
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
+}
