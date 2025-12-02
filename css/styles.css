@@ -333,8 +333,8 @@ es para lo mismo.
 
 .trayectoria-contenido {
     text-align: center;
-    /* scroll-snap-align: center;
-    scroll-snap-stop: always; */
+    /* /* scroll-snap-align: center; */
+    /* scroll-snap-stop: always; */ */
 }
 
 .contenedor-trayectoria {
@@ -350,8 +350,8 @@ es para lo mismo.
     column-gap: 2rem;
     align-items: center;
     text-align: center;
-    /* scroll-snap-align: center;
-    scroll-snap-stop: always; */
+    /* /* scroll-snap-align: center; */
+    /* scroll-snap-stop: always; */ */
 }
 
 .contenido-herramientas {
@@ -360,8 +360,8 @@ es para lo mismo.
     column-gap: 2rem;
     align-items: center;
     text-align: center;
-    /* scroll-snap-align: center;
-    scroll-snap-stop: always; */
+    /* /* scroll-snap-align: center; */
+    /* scroll-snap-stop: always; */ */
 }
 
 
@@ -378,8 +378,8 @@ es para lo mismo.
         column-gap: 0;
         align-items: center;
         text-align: center;
-        /* scroll-snap-align: center;
-        scroll-snap-stop: always; */
+        /* /* scroll-snap-align: center; */
+        /* scroll-snap-stop: always; */ */
     }
 
     .parrafos-herramientas:nth-child(1) {
@@ -414,8 +414,8 @@ es para lo mismo.
     align-items: center;
     margin-top: 2rem;
     color: black;
-    /* scroll-snap-align: center;
-    scroll-snap-stop: always; */
+    /* /* scroll-snap-align: center; */
+    /* scroll-snap-stop: always; */ */
 }
 
 .parrafos-herramientas h3 {
@@ -441,8 +441,8 @@ es para lo mismo.
 .filosofia {
     text-align: center;
     margin-top: 5rem;
-    /* scroll-snap-align: center;
-    scroll-snap-stop: always; */
+    /* /* scroll-snap-align: center; */
+    /* scroll-snap-stop: always; */ */
 }
 
 .contenedor-filosofia {
@@ -455,8 +455,8 @@ es para lo mismo.
 .servicios,
 .nav_bar,
 .formulario {
-    /* scroll-snap-align: center;
-    scroll-snap-stop: always; */
+    /* /* scroll-snap-align: center; */
+    /* scroll-snap-stop: always; */ */
 }
 
 @media (min-width: 768px) {
