@@ -9,6 +9,8 @@
     --color-fondo: #ECF0F1;
     --color-gris: #696969;
     --color-blanco: #FFFFFF;
+    --color-rojo: #ff4f4f;
+    --color-verde: #57ff4f;
 }
 
 html {
@@ -265,6 +267,9 @@ es para lo mismo.
     color: var(--color-blanco);
 }
 
+.contacto{
+    margin-bottom: 5rem;
+}
 
 .hero {
     background-image: url(../image/hero.jpg);
@@ -310,9 +315,10 @@ es para lo mismo.
     flex-direction: column;
     align-items: center;
     font-weight: bold;
-    scroll-snap-align: center;
+    /* scroll-snap-align: center;
     scroll-snap-stop: always;
-}
+    */
+} 
 
 .banner img {
     border-radius: 5rem;
@@ -327,8 +333,8 @@ es para lo mismo.
 
 .trayectoria-contenido {
     text-align: center;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+    /* /* scroll-snap-align: center; */
+    /* scroll-snap-stop: always; */ */
 }
 
 .contenedor-trayectoria {
@@ -344,8 +350,8 @@ es para lo mismo.
     column-gap: 2rem;
     align-items: center;
     text-align: center;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+    /* /* scroll-snap-align: center; */
+    /* scroll-snap-stop: always; */ */
 }
 
 .contenido-herramientas {
@@ -354,8 +360,8 @@ es para lo mismo.
     column-gap: 2rem;
     align-items: center;
     text-align: center;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+    /* /* scroll-snap-align: center; */
+    /* scroll-snap-stop: always; */ */
 }
 
 
@@ -372,8 +378,8 @@ es para lo mismo.
         column-gap: 0;
         align-items: center;
         text-align: center;
-        scroll-snap-align: center;
-        scroll-snap-stop: always;
+        /* /* scroll-snap-align: center; */
+        /* scroll-snap-stop: always; */ */
     }
 
     .parrafos-herramientas:nth-child(1) {
@@ -408,8 +414,8 @@ es para lo mismo.
     align-items: center;
     margin-top: 2rem;
     color: black;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+    /* /* scroll-snap-align: center; */
+    /* scroll-snap-stop: always; */ */
 }
 
 .parrafos-herramientas h3 {
@@ -435,8 +441,8 @@ es para lo mismo.
 .filosofia {
     text-align: center;
     margin-top: 5rem;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+    /* /* scroll-snap-align: center; */
+    /* scroll-snap-stop: always; */ */
 }
 
 .contenedor-filosofia {
@@ -449,8 +455,8 @@ es para lo mismo.
 .servicios,
 .nav_bar,
 .formulario {
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+    /* /* scroll-snap-align: center; */
+    /* scroll-snap-stop: always; */ */
 }
 
 @media (min-width: 768px) {
@@ -493,6 +499,29 @@ es para lo mismo.
 }
 
 /*Contacto*/
+
+.encabezado__contacto{
+ text-align: center;
+ font-weight: bold;
+ font-size: 5rem;
+
+}
+
+.error{
+    background-color: var(--color-rojo);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-blanco);
+}
+.enviar{
+    background-color: var(--color-verde);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-blanco);
+    transition: ease-in-out 5s;
+}
 
 .formulario {
     background-color: var(--color-gris);
@@ -564,4 +593,39 @@ es para lo mismo.
 
 .footer {
     text-align: center;
+}
+.footer .sobre-mi {
+    color: var(--color-blanco);
+}
+
+/* PORTAFOLIO */
+
+.tarjeta{
+    padding-top: 5rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.tarjeta__imagen{
+    width: 1000px;
+    height: 500px;
+}
+.imagen{
+    max-width: 100%;
+}
+.tarjeta__descripcion{
+    text-align: justify;
+    font-size: 2rem;
+}
+.tarjeta__descripcion span{
+    font-weight: bold;
+}
+.botones{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.tarjeta__boton{
+    margin-right: 2rem;
 }
