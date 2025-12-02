@@ -9,6 +9,8 @@
     --color-fondo: #ECF0F1;
     --color-gris: #696969;
     --color-blanco: #FFFFFF;
+    --color-rojo: #ff4f4f;
+    --color-verde: #57ff4f;
 }
 
 html {
@@ -265,6 +267,9 @@ es para lo mismo.
     color: var(--color-blanco);
 }
 
+.contacto{
+    margin-bottom: 5rem;
+}
 
 .hero {
     background-image: url(../image/hero.jpg);
@@ -494,6 +499,29 @@ es para lo mismo.
 
 /*Contacto*/
 
+.encabezado__contacto{
+ text-align: center;
+ font-weight: bold;
+ font-size: 5rem;
+
+}
+
+.error{
+    background-color: var(--color-rojo);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-blanco);
+}
+.enviar{
+    background-color: var(--color-verde);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-blanco);
+    transition: ease-in-out 5s;
+}
+
 .formulario {
     background-color: var(--color-gris);
     width: min(60rem, 100%);
@@ -564,4 +592,7 @@ es para lo mismo.
 
 .footer {
     text-align: center;
+}
+.footer .sobre-mi {
+    color: var(--color-blanco);
 }

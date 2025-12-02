@@ -24,8 +24,8 @@
         <nav class="nav_bar contenedor">
             <a href="index.html">Inicio</a>
             <a href="sobre-mi.html">Sobre mi</a>
-            <a href="#">Clientes</a>
-            <a href="#">Contacto</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="portafolio.html">Portafolio</a>
         </nav>
     </div>
 
@@ -43,7 +43,7 @@
                 <p>ciudad de méxico</p>
             </div>
 
-            <a class="boton" href="#">Contactame</a>
+            <a class="boton" href="contacto.html">Contactame</a>
         </div>
 
     </section>
@@ -114,55 +114,51 @@
 
         <h2>Contacto</h2>
 
-         <section class="formulario">
+        <section class="formulario">
 
-        <form>
-            <fieldset>
-                <legend>Contactame llenando todos los campos</legend>
+            <form>
+                <fieldset>
+                    <legend>Contactame llenando todos los campos</legend>
 
-                <div class="contenedor_campos">
+                    <div class="contenedor_campos">
 
-                <div class="campo">
-                    <label>Nombre</label>
-                    <input class="input_text" type="text" placeholder="Tu nombre">
-                </div>
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input_text" id="nombre" type="text" placeholder="Tu nombre">
+                        </div>
 
-                <div class="campo">
-                    <label>Telefono</label>
-                    <input class="input_text" type="tel" placeholder="Tu telefono">
-                </div>
+                        <div class="campo">
+                            <label>Telefono</label>
+                            <input class="input_text" id="telefono" type="tel" placeholder="Tu telefono">
+                        </div>
 
-                <div class="campo">
-                    <label>Correo</label>
-                    <input class="input_text" type="email" placeholder="Tu correo">
-                </div>
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input_text" id="correo" type="email" placeholder="Tu correo">
+                        </div>
 
-                <div class="campo">
-                    <label>Mensaje</label>
-                    <textarea class="input_text"></textarea>
-                </div>
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input_text" id="mensaje"></textarea>
+                        </div>
 
-                </div>
+                    </div>
 
-                <div class="alinear_derecha flex">
-                    <input class="boton w_100" type="submit" value="Enviar">
-                </div>
+                    <div class="alinear_derecha flex">
+                        <input class="boton w_100" type="submit" value="Enviar">
+                    </div>
 
+                </fieldset>
 
-            </fieldset>
-
-        </form>
-    </section>
+            </form>
+        </section>
 
     </main>
-
-   
-
 
     <footer class="footer">
         <p>© 2025 derechos reservados a Javier Arteaga Freelancer</p>
     </footer>
-
+    <script src="js/app.js"></script>
 
 </body>
 
